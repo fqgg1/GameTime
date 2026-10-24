@@ -32,6 +32,90 @@ table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:520px}
 th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--muted);font-weight:600;font-size:.85rem}
 td:first-child{font-weight:600;white-space:nowrap}
+a{color:var(--accent)}
+footer{margin-top:56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:20px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <span class="badge">Android · Private by design</span>
+  <h1>Screen time that stays<br>on your phone.</h1>
+  <p class="lead">GameTime shows where your time goes and helps you stick to limits you set yourself. No account, no cloud, and your usage data never leaves your phone.</p>
+</header>
+
+<h2>What it does</h2>
+<div class="grid">
+  <div class="card"><h3>Daily &amp; weekly usage</h3><p>See time per app for today, this week, last week or last month, plus unlock and notification counts.</p></div>
+  <div class="card"><h3>Per-app limits</h3><p>Set a different limit for each day of the week. When time is up, the app is blocked.</p></div>
+  <div class="card"><h3>App groups</h3><p>Put apps together (like all your games) and share one combined limit.</p></div>
+  <div class="card"><h3>Focus mode</h3><p>Pick distracting apps and cap their total time for the day.</p></div>
+  <div class="card"><h3>PIN &amp; bonus time</h3><p>Protect your settings with a PIN and grant yourself extra time deliberately, not by accident.</p></div>
+  <div class="card"><h3>Widgets &amp; themes</h3><p>Home-screen widgets, light/dark/auto mode and four colour themes: Midnight, Sakura, Forest and Lavender.</p></div>
+</div>
+
+<section class="privacy">
+  <h2>Your privacy, plainly</h2>
+  <ul>
+    <li><strong>Internet is only for ads.</strong> GameTime uses the internet only to show ads, and they never affect how the app works. Your screen time and app usage are not sent anywhere.</li>
+    <li><strong>No accounts and no usage tracking.</strong> Nothing to sign up for, and no analytics on what you do in the app.</li>
+    <li><strong>Your data stays on-device.</strong> Limits, groups, PIN and preferences are stored locally on your phone.</li>
+    <li><strong>It never reads what’s on your screen.</strong> The accessibility service only learns which app just opened, so it can enforce limits. It can’t see text, messages or passwords.</li>
+    <li><strong>You’re in control.</strong> Every permission is optional to revoke in Android settings, and uninstalling removes everything. Read the <a href="privacy.html">full privacy policy</a>.</li>
+  </ul>
+</section>
+
+<h2>Permissions, and why</h2>
+<div class="wrap">
+<table>
+  <thead><tr><th>Permission</th><th>Why GameTime needs it</th></tr></thead>
+  <tbody>
+    <tr><td>Usage access</td><td>Lets Android tell GameTime how long each app was open. This is the core of the app.</td></tr>
+    <tr><td>Accessibility service</td><td>Detects the moment an app launches so a limit can be enforced instantly. Window content is not read.</td></tr>
+    <tr><td>Display over other apps</td><td>Shows the “time’s up” block screen on top of a limited app.</td></tr>
+    <tr><td>Internet</td><td>Only used to load ads.</td></tr>
+    <tr><td>Notifications &amp; foreground service</td><td>Keeps the monitor running reliably and shows its status notification.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<footer>GameTime · Built to help you spend your time on purpose. Questions about privacy? Read our <a href="privacy.html">Privacy Policy</a> or contact the developer.</footer>
+</main>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GameTime: Screen time that stays on your phone</title>
+<style>
+:root{--bg:#f0f5ff;--card:#ffffff;--text:#1e293b;--muted:#475569;--accent:#2563eb;--accent-soft:#dbe7ff;--line:#d7e1f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f19;--card:#161f33;--text:#f3f4f6;--muted:#9ca3af;--accent:#60a5fa;--accent-soft:#1b2a4d;--line:#26324d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0f19;--card:#161f33;--text:#f3f4f6;--muted:#9ca3af;--accent:#60a5fa;--accent-soft:#1b2a4d;--line:#26324d;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:0 20px 56px}
+header{padding:72px 0 40px}
+.badge{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:13px;padding:4px 12px;border-radius:99px}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.1;margin:18px 0 14px;letter-spacing:-.02em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px}
+h2{font-size:1.5rem;margin:56px 0 18px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h3{font-size:1.02rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.privacy{background:var(--accent-soft);border-radius:24px;padding:28px;margin-top:56px}
+.privacy h2{margin-top:0}
+.privacy ul{list-style:none;padding:0;display:grid;gap:12px}
+.privacy li{padding-left:30px;position:relative}
+.privacy li::before{content:"";position:absolute;left:4px;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:520px}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:.85rem}
+td:first-child{font-weight:600;white-space:nowrap}
 footer{margin-top:56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:20px}
 </style>
 </head>
