@@ -1,130 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - GameTime</title>
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --text-color: #1e293b;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            border: 1px solid var(--border-color);
-        }
-
-        h1 {
-            color: var(--primary-color);
-            margin-bottom: 8px;
-        }
-
-        .effective-date {
-            color: #64748b;
-            font-size: 0.9em;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            margin-top: 32px;
-            border-bottom: 2px solid var(--bg-color);
-            padding-bottom: 8px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .highlight-box {
-            background-color: #eff6ff;
-            border-left: 4px solid var(--primary-color);
-            padding: 16px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .highlight-box strong {
-            color: var(--primary-color);
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 0.85em;
-            color: #64748b;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GameTime: Screen time that stays on your phone</title>
+<style>
+:root{--bg:#f0f5ff;--card:#ffffff;--text:#1e293b;--muted:#475569;--accent:#2563eb;--accent-soft:#dbe7ff;--line:#d7e1f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f19;--card:#161f33;--text:#f3f4f6;--muted:#9ca3af;--accent:#60a5fa;--accent-soft:#1b2a4d;--line:#26324d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0f19;--card:#161f33;--text:#f3f4f6;--muted:#9ca3af;--accent:#60a5fa;--accent-soft:#1b2a4d;--line:#26324d;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:0 20px 56px}
+header{padding:72px 0 40px}
+.badge{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:13px;padding:4px 12px;border-radius:99px}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.1;margin:18px 0 14px;letter-spacing:-.02em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px}
+h2{font-size:1.5rem;margin:56px 0 18px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h3{font-size:1.02rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.privacy{background:var(--accent-soft);border-radius:24px;padding:28px;margin-top:56px}
+.privacy h2{margin-top:0}
+.privacy ul{list-style:none;padding:0;display:grid;gap:12px}
+.privacy li{padding-left:30px;position:relative}
+.privacy li::before{content:"";position:absolute;left:4px;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:520px}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:.85rem}
+td:first-child{font-weight:600;white-space:nowrap}
+footer{margin-top:56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:20px}
+</style>
 </head>
 <body>
+<main>
+<header>
+  <span class="badge">Android · Private by design</span>
+  <h1>Screen time that stays<br>on your phone.</h1>
+  <p class="lead">GameTime shows where your time goes and helps you stick to limits you set yourself. No account, no cloud, and your usage data never leaves your phone.</p>
+</header>
 
-<div class="container">
-    <h1>Privacy Policy</h1>
-    <div class="effective-date">Effective Date: July 21, 2026</div>
-
-    <div class="highlight-box">
-        <strong>The Short Version:</strong> GameTime is designed with privacy as its top priority. <strong>We do not collect, store, transmit, or share any of your personal or usage data.</strong> Everything happens 100% locally on your device.
-    </div>
-
-    <h2>1. Introduction</h2>
-    <p>Welcome to <strong>GameTime</strong> ("we," "our," or "us"). We respect your privacy and are committed to protecting it. This Privacy Policy explains how our application functions regarding your data.</p>
-
-    <h2>2. Zero Data Collection & Cloud Storage</h2>
-    <p>Because GameTime operates entirely on-device:</p>
-    <ul>
-        <li>We <strong>do not</strong> own, rent, or operate remote servers to store your usage data.</li>
-        <li>We <strong>do not</strong> transmit your screen time stats, app lists, or habits over the internet.</li>
-        <li>We <strong>do not</strong> collect personal identifiers such as your name, email address, IP address, or location.</li>
-    </ul>
-
-    <h2>3. How Your Data Is Processed</h2>
-    <p>GameTime requires specific permissions (such as Usage Stats or Accessibility Services) strictly to track your screen time and present it to you within the app. All calculated statistics, logs, and tracking data are written directly to your device’s local storage (e.g., local database or preferences).</p>
-
-    <h2>4. Third-Party Services</h2>
-    <p>Since no data leaves your device, we do not integrate with third-party analytics platforms, advertising networks, or data brokers that track your activity across apps or websites.</p>
-
-    <h2>5. Data Control & Deletion</h2>
-    <p>You have full ownership and control over your screen time data at all times:</p>
-    <ul>
-        <li><strong>Clearing Data:</strong> You can clear the app’s stored data anytime through your device's System Settings.</li>
-        <li><strong>Uninstalling:</strong> Deleting GameTime from your device immediately and permanently removes all data generated by the application.</li>
-    </ul>
-
-    <h2>6. Children's Privacy</h2>
-    <p>Our app is safe for users of all ages, including children under the age of 13. Because we do not collect any personal information whatsoever, we comply fully with COPPA (Children's Online Privacy Protection Act) and similar international regulations by default.</p>
-
-    <h2>7. Changes to This Policy</h2>
-    <p>If we make changes to this privacy policy, we will update the "Effective Date" at the top. However, our core commitment—that your screen time data stays entirely on your device—will remain unchanged.</p>
-
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions or suggestions regarding this Privacy Policy, feel free to contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:[fqgamer019@gmail.com]">[fqgamer019@gmail.com]</a></p>
-
-    <footer>
-        &copy; 2026 GameTime. All rights reserved.
-    </footer>
+<h2>What it does</h2>
+<div class="grid">
+  <div class="card"><h3>Daily &amp; weekly usage</h3><p>See time per app for today, this week, last week or last month, plus unlock and notification counts.</p></div>
+  <div class="card"><h3>Per-app limits</h3><p>Set a different limit for each day of the week. When time is up, the app is blocked.</p></div>
+  <div class="card"><h3>App groups</h3><p>Put apps together (like all your games) and share one combined limit.</p></div>
+  <div class="card"><h3>Focus mode</h3><p>Pick distracting apps and cap their total time for the day.</p></div>
+  <div class="card"><h3>PIN &amp; bonus time</h3><p>Protect your settings with a PIN and grant yourself extra time deliberately, not by accident.</p></div>
+  <div class="card"><h3>Widgets &amp; themes</h3><p>Home-screen widgets, light/dark/auto mode and four colour themes: Midnight, Sakura, Forest and Lavender.</p></div>
 </div>
 
+<section class="privacy">
+  <h2>Your privacy, plainly</h2>
+  <ul>
+    <li><strong>Internet is only for ads.</strong> GameTime uses the internet only to show ads, and they never affect how the app works. Your screen time and app usage are not sent anywhere.</li>
+    <li><strong>No accounts and no usage tracking.</strong> Nothing to sign up for, and no analytics on what you do in the app.</li>
+    <li><strong>Your data stays on-device.</strong> Limits, groups, PIN and preferences are stored locally on your phone.</li>
+    <li><strong>It never reads what’s on your screen.</strong> The accessibility service only learns which app just opened, so it can enforce limits. It can’t see text, messages or passwords.</li>
+    <li><strong>You’re in control.</strong> Every permission is optional to revoke in Android settings, and uninstalling removes everything.</li>
+  </ul>
+</section>
+
+<h2>Permissions, and why</h2>
+<div class="wrap">
+<table>
+  <thead><tr><th>Permission</th><th>Why GameTime needs it</th></tr></thead>
+  <tbody>
+    <tr><td>Usage access</td><td>Lets Android tell GameTime how long each app was open. This is the core of the app.</td></tr>
+    <tr><td>Accessibility service</td><td>Detects the moment an app launches so a limit can be enforced instantly. Window content is not read.</td></tr>
+    <tr><td>Display over other apps</td><td>Shows the “time’s up” block screen on top of a limited app.</td></tr>
+    <tr><td>Internet</td><td>Only used to load ads.</td></tr>
+    <tr><td>Notifications &amp; foreground service</td><td>Keeps the monitor running reliably and shows its status notification.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<footer>GameTime · Built to help you spend your time on purpose. Questions about privacy? Contact the developer.</footer>
+</main>
 </body>
 </html>
